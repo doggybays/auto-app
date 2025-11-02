@@ -1,0 +1,1 @@
+Public static assets folder. Add images/css/js here.

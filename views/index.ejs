@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Auto Meme Admin</title></head>
+<body>
+  <h1>Auto Meme App — Admin Dashboard</h1>
+  <p>Version: <%= version %></p>
+  <form id="scheduleForm" method="post" action="/admin/schedule-now">
+    <button type="submit">Run Scheduled Job Now</button>
+  </form>
+  <h2>Quick Actions</h2>
+  <ul>
+    <li><a href="/tiktok/connect">Connect TikTok</a></li>
+    <li><a href="/instagram/connect">Connect Instagram</a></li>
+  </ul>
+</body>
+</html>
