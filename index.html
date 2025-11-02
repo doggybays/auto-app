@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Malaysian Jokes Hub — Meme Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Malaysian Jokes Hub</h1>
+      <p class="sub">Malaysia daily life + TikTok trending meme generator — one click to download</p>
+    </header>
+
+    <main>
+      <div class="controls">
+        <label>
+          Pick a background:
+          <select id="bgSelect">
+            <option value="random">Random trendy background</option>
+            <option value="mamak">Mamak / kopitiam (cozy)</option>
+            <option value="school">School / exam</option>
+            <option value="bus">Transport / LRT</option>
+            <option value="generic">Color block (solid)</option>
+          </select>
+        </label>
+
+        <label>
+          Meme vibe:
+          <select id="vibeSelect">
+            <option value="malaysia">Malaysia life</option>
+            <option value="tiktok">TikTok trend style</option>
+            <option value="both">Mix (recommended)</option>
+          </select>
+        </label>
+
+        <label>
+          Top text (optional)
+          <input id="topInput" placeholder="When the TNB bill arrives..." />
+        </label>
+
+        <label>
+          Bottom text (optional)
+          <input id="bottomInput" placeholder="All my duit gone" />
+        </label>
+
+        <div class="buttons">
+          <button id="generateBtn">Generate Meme</button>
+          <button id="downloadBtn" disabled>Download Image (1080×1920)</button>
+          <button id="randomBtn">Random Caption</button>
+        </div>
+
+        <p class="note">Tip: leave text blank and press <b>Random Caption</b> for quick viral-ready copy.</p>
+      </div>
+
+      <div class="canvasWrap">
+        <canvas id="memeCanvas" width="1080" height="1920"></canvas>
+        <div class="watermark">Malaysian Jokes Hub</div>
+      </div>
+    </main>
+
+    <footer>
+      <small>Made for Malaysian Jokes Hub • Download and post to TikTok / IG Reels</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
